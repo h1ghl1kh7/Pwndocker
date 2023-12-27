@@ -29,5 +29,5 @@
         - code snippets
         - coc settings
     - vim-floaterm
-    - custom analysis highlight
+    - custom analysis highlight  
         use `// A: ????` -> bg purple, fg black highlight
