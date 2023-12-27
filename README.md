@@ -33,7 +33,7 @@
     - ROPgadget
     - capstone
 - checksec
-- one_gadget
+- one\_gadget
 - vim
     - coc.nvim
         - code snippets
