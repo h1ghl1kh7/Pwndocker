@@ -19,8 +19,10 @@ RUN apt update -y
 RUN apt install python3 python3-pip python3-dev python3-setuptools libssl-dev  -y
 RUN apt install libffi-dev build-essential libc6-dbg gcc-multilib make gcc netcat git curl -y
 RUN apt install wget gdb zsh ruby-full ssh libffi-dev libc6-i386 software-properties-common -y
-RUN add-apt-repository ppa:jonathonf/vim -y
-RUN apt install vim -y
+RUN add-apt-repository ppa:neovim-ppa/stable -y
+
+RUN apt update -y
+RUN apt install neovim -y
 RUN apt install fonts-powerline file gem -y
 
 RUN wget https://bootstrap.pypa.io/get-pip.py && python3 get-pip.py && rm get-pip.py
